@@ -16,6 +16,10 @@ in HTML:
 <link rel="stylesheet" href="https://chadlavi.github.io/style/style.css" />
 ```
 
+## docs
+
+See documentation at <a target="_blank" href="https://chadlavi.github.io/style/">https://chadlavi.github.io/style/</a>
+
 ## credits
 
-<span>Example avatar photo by <a target="_blank" href="https://unsplash.com/@joelmott">Joel Mott</a> on <a href="https://unsplash.com/s/photos/face">Unsplash</a></span>.
+<span>Example avatar photo by <a target="_blank" href="https://unsplash.com/@joelmott">Joel Mott</a> on <a target="_blank" href="https://unsplash.com/s/photos/face">Unsplash</a></span>.
