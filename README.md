@@ -2,6 +2,19 @@
 
 a personal css-only style system
 
+## use
+
+in CSS:
+
+```css
+@import url("https://chadlavi.github.io/style/style.css");
+```
+
+in HTML:
+
+```html
+<link rel="stylesheet" href="https://chadlavi.github.io/style/style.css" />
+```
 
 ## credits
 
