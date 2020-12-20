@@ -3,24 +3,9 @@
 @import url("global.css");
 @import url("gradient.css");
 @import url("text.css");
+@import url("layout.css");
 
 /* ELEMENTS */
-
-html,
-body {
-  font-family: var(--font);
-  font-size: var(--font-size);
-  color: var(--text-color);
-  background: var(--background);
-  line-height: var(--line-height);
-  margin: 0;
-}
-
-main {
-  margin: 0 auto;
-  width: calc(100% - (var(--unit) * 2));
-  max-width: calc(var(--unit) * 128);
-}
 
 /* Links */
 
@@ -37,9 +22,6 @@ a.external:after {
   content: "\00a0[↗]";
 }
 
-a.anchor {
-  color: inherit;
-}
 a.anchor:hover {
   text-decoration: none;
 }
@@ -58,6 +40,7 @@ a.anchor:focus:after {
   border-radius: 50%;
   border: 2px solid var(--grey-light-500);
   background: var(--grey-light-500);
+  padding: 0;
 }
 .avatar > img {
   width: 100%;
@@ -241,11 +224,6 @@ button.text-only.danger:focus,
   color: var(--danger-dark);
   background: linear-gradient(80deg, var(--red-25) 25%, var(--red-50) 100%);
 }
-
-.full-width {
-  width: 100%;
-}
-
 
 /* code-sandbox-only fix */
 iframe {

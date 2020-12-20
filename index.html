@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="EN">
+
 <head>
   <title>Style</title>
   <meta charset="UTF-8" />
@@ -10,6 +11,10 @@
 
 <body>
   <main>
+    <h1 class="margin-top-lg">Style</h1>
+    <h2 id="text" class="margin-top-xl margin-bottom-md"><a class="anchor" href="#text">text</a></h2>
+    
+    <h3>headers with semantic tags</h3>
     <h1>h1 Primary / <span class="text secondary">h1 secondary</span></h1>
     <h2>h2 Primary / <span class="text secondary">h2 secondary</span></h2>
     <h3>h3 Primary / <span class="text secondary">h3 secondary</span></h3>
@@ -17,143 +22,234 @@
     <h5>h5 Primary / <span class="text secondary">h5 secondary</span></h5>
     <h6>h6 Primary / <span class="text secondary">h6 secondary</span></h6>
 
-    <h2 id="gradient" class="margin-top-md margin-bottom-md"><a class="anchor" href="#gradient">gradient</a></h2>
+    <h3 class="margin-top-md">headers with class names (identical appearance)</h3>
+    <div class="h1">.h1 Primary / <span class="text secondary">.h1 secondary</span></div>
+    <div class="h2">.h2 Primary / <span class="text secondary">.h2 secondary</span></div>
+    <div class="h3">.h3 Primary / <span class="text secondary">.h3 secondary</span></div>
+    <div class="h4">.h4 Primary / <span class="text secondary">.h4 secondary</span></div>
+    <div class="h5">.h5 Primary / <span class="text secondary">.h5 secondary</span></div>
+    <div class="h6">.h6 Primary / <span class="text secondary">.h6 secondary</span></div>
 
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-purple-light">
-      gradient-purple-light
-    </div>
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-red-light">
-      gradient-red-light
-    </div>
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-yellow-light">
-      gradient-yellow-light
-    </div>
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-green-light">
-      gradient-green-light
-    </div>
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-blue-light">
-      gradient-blue-light
-    </div>
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-navy-light">
-      gradient-navy-light
-    </div>
-
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-purple">
-      gradient-purple
-    </div>
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-red">
-      gradient-red
-    </div>
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-yellow">
-      gradient-yellow
-    </div>
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-green">
-      gradient-green
-    </div>
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-blue">
-      gradient-blue
-    </div>
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-navy">
-      gradient-navy
-    </div>
-
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-purple-dark">
-      gradient-purple-dark
-    </div>
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-red-dark">
-      gradient-red-dark
-    </div>
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-yellow-dark">
-      gradient-yellow-dark
-    </div>
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-green-dark">
-      gradient-green-dark
-    </div>
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-blue-dark">
-      gradient-blue-dark
-    </div>
-    <div class="pad-md border-radius-sm margin-top-md margin-bottom-md gradient-navy-dark">
-      gradient-navy-dark
-    </div>
-
-    <h2 id="text"><a class="anchor" href="#text">text</a></h2>
+    <div class="margin-top-md">Normal body text.</div>
+    
+    <h2 id="link" class="margin-top-xl margin-bottom-md"><a class="anchor" href="#link">link</a></h2>
+    
     <div class="margin-top-md margin-bottom-md">
-      here is some text with a
-      <a href="https://example.org" target="_blank" rel="noopener noreferrer">link</a>.
+      default link:
+      <a href="https://example.org">
+        link
+      </a>
     </div>
-
-    <h2 id="avatar"><a class="anchor" href="#avatar">avatar</a></h2>
-
     <div class="margin-top-md margin-bottom-md">
-      <h3>small</h3>
-      <div class="avatar small margin-top-md">
-        <img
-          src="img/avatar.jpg" />
+      link with target="_blank":
+      <a href="https://example.org" target="_blank" rel="noopener noreferrer">
+        link
+      </a>
+    </div>
+    <div class="margin-top-md margin-bottom-md">
+      link with class external:
+      <a href="#link" class="external">
+        link
+      </a>
+    </div>
+    <div class="margin-top-md margin-bottom-md">
+      link with class anchor:
+      <a href="#link" class="anchor">
+        link
+      </a>
+    </div>
+    
+    <h2 id="gradient" class="margin-top-xl margin-bottom-md"><a class="anchor" href="#gradient">gradient</a></h2>
+    
+    <div class="flex wrap">
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-purple-light">
+          gradient-purple-light
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-red-light">
+          gradient-red-light
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-yellow-light">
+          gradient-yellow-light
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-green-light">
+          gradient-green-light
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-blue-light">
+          gradient-blue-light
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-navy-light">
+          gradient-navy-light
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-purple">
+          gradient-purple
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-red">
+          gradient-red
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-yellow">
+          gradient-yellow
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-green">
+          gradient-green
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-blue">
+          gradient-blue
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-navy">
+          gradient-navy
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-purple-dark">
+          gradient-purple-dark
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-red-dark">
+          gradient-red-dark
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-yellow-dark">
+          gradient-yellow-dark
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-green-dark">
+          gradient-green-dark
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-blue-dark">
+          gradient-blue-dark
+        </div>
+      </div>
+      <div class="col-6 xs-12 pad-sm">
+        <div class="pad-md border-radius-sm gradient-navy-dark">
+          gradient-navy-dark
+        </div>
       </div>
     </div>
-    <div class="margin-top-md margin-bottom-md">
-      <h3>default</h3>
-      <div class="avatar margin-top-md">
-        <img
-          src="img/avatar.jpg" />
+
+    <h2 id="avatar" class="margin-top-xl margin-bottom-md"><a class="anchor" href="#avatar">avatar</a></h2>
+
+    <h3 class="center">as divs</h3>
+    <div class="flex wrap margin-top-md margin-bottom-md">
+      <div class="col-4 xs-12 margin-top-sm margin-bottom-sm flex column align-center">
+        <h4>small</h4>
+        <div class="avatar small margin-top-md">
+          <img src="img/avatar.jpg" />
+        </div>
       </div>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <h3>large</h3>
-      <div class="avatar large margin-top-md">
-        <img
-          src="img/avatar.jpg" />
+      <div class="col-4 xs-12 margin-top-sm margin-bottom-sm flex column align-center">
+        <h4>default</h4>
+        <div class="avatar margin-top-md">
+          <img src="img/avatar.jpg" />
+        </div>
+      </div>
+      <div class="col-4 xs-12 margin-top-sm margin-bottom-sm flex column align-center">
+        <h4>large</h4>
+        <div class="avatar large margin-top-md">
+          <img src="img/avatar.jpg" />
+          </div>
+          </div>
+          </div>
+          
+          <h3 class="center">as buttons</h3>
+          <div class="flex wrap margin-top-md margin-bottom-md">
+            <div class="col-4 xs-12 margin-top-sm margin-bottom-sm flex column align-center">
+              <h4>small</h4>
+              <button class="avatar small margin-top-md">
+                <img src="img/avatar.jpg" />
+              </button>
+            </div>
+            <div class="col-4 xs-12 margin-top-sm margin-bottom-sm flex column align-center">
+              <h4>default</h4>
+              <button class="avatar margin-top-md">
+                <img src="img/avatar.jpg" />
+              </button>
+            </div>
+            <div class="col-4 xs-12 margin-top-sm margin-bottom-sm flex column align-center">
+              <h4>large</h4>
+              <button class="avatar large margin-top-md">
+                <img src="img/avatar.jpg" />
+              </button>
       </div>
     </div>
 
-    <h2 id="button"><a class="anchor" href="#button">button</a></h2>
-    <div class="margin-top-md margin-bottom-md">
-      <button disabled>I'm a button</button>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <button>I'm a button</button>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <button class="full-width">I'm a button</button>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <button class="text-only">I'm a button</button>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <button disabled class="primary">I'm a primary button</button>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <button class="primary">I'm a primary button</button>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <button class="primary full-width">I'm a primary button</button>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <button class="primary text-only">I'm a primary button</button>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <button disabled class="secondary">I'm a secondary button</button>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <button class="secondary">I'm a secondary button</button>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <button class="secondary full-width">I'm a secondary button</button>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <button class="secondary text-only">I'm a secondary button</button>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <button disabled class="danger">I'm a danger button</button>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <button class="danger">I'm a danger button</button>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <button class="danger full-width">I'm a danger button</button>
-    </div>
-    <div class="margin-top-md margin-bottom-md">
-      <button class="danger text-only">I'm a danger button</button>
+    <h2 id="button" class="margin-top-xl margin-bottom-md"><a class="anchor" href="#button">button</a></h2>
+    <div class="flex wrap">
+      <div class="col-4 xs-12 pad-sm flex justify-center">
+        <button disabled>disabled button</button>
+      </div>
+      <div class="col-4 xs-12 pad-sm flex justify-center">
+        <button>default button</button>
+      </div>
+      <div class="col-4 xs-12 pad-sm flex justify-center">
+        <button class="text-only">text-only button</button>
+      </div>
+      <div class="col-12 pad-sm flex justify-center">
+        <button class="full-width">full-width button</button>
+      </div>
+      <div class="col-4 xs-12 pad-sm flex justify-center">
+        <button disabled class="primary">disabled primary button</button>
+      </div>
+      <div class="col-4 xs-12 pad-sm flex justify-center">
+        <button class="primary">primary button</button>
+      </div>
+      <div class="col-4 xs-12 pad-sm flex justify-center">
+        <button class="primary text-only">text-only primary button</button>
+      </div>
+      <div class="col-12 pad-sm flex justify-center">
+        <button class="primary full-width">full-width primary button</button>
+      </div>
+      <div class="col-4 xs-12 pad-sm flex justify-center">
+        <button disabled class="secondary">disabled secondary button</button>
+      </div>
+      <div class="col-4 xs-12 pad-sm flex justify-center">
+        <button class="secondary">secondary button</button>
+      </div>
+      <div class="col-4 xs-12 pad-sm flex justify-center">
+        <button class="secondary text-only">text-only secondary button</button>
+      </div>
+      <div class="col-12 pad-sm flex justify-center">
+        <button class="secondary full-width">full-width secondary button</button>
+      </div>
+      <div class="col-4 xs-12 pad-sm flex justify-center">
+        <button disabled class="danger">disabled danger button</button>
+      </div>
+      <div class="col-4 xs-12 pad-sm flex justify-center">
+        <button class="danger">danger button</button>
+      </div>
+      <div class="col-4 xs-12 pad-sm flex justify-center">
+        <button class="danger text-only">text-only danger button</button>
+      </div>
+      <div class="col-12 pad-sm flex justify-center">
+        <button class="danger full-width">full-width danger button</button>
+      </div>
     </div>
   </main>
 </body>
