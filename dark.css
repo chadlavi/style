@@ -1,0 +1,53 @@
+@import url("tokens.css");
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--grey-warm-900);
+    
+    --theme: var(--purple-400);
+    --theme-dark: var(--purple-600);
+    
+    /* TEXT */
+    --text-color: var(--white);
+    --text-secondary: var(--grey-warm-200);
+
+
+
+    /* BUTTON COLORS */
+
+    --button-color: var(--white);
+    --button-bg-color-1: var(--grey-warm-600);
+    --button-bg-color-2: var(--grey-warm-700);
+    --button-border-color: var(--grey-warm-600);
+    --button-hover-color-1: var(--grey-warm-700);
+    --button-hover-color-2: var(--grey-warm-800);
+    --button-active-color: var(--grey-warm-700);
+
+    --button-text-only-color: var(--white);
+    --button-text-only-hover-color: var(--white);
+    --button-text-only-hover-bg-color-1: var(--grey-warm-600);
+    --button-text-only-hover-bg-color-2: var(--grey-warm-700);
+ 
+    --button-primary-bg-color-1: var(--purple-700);
+    --button-primary-bg-color-2: var(--purple-800);
+    --button-primary-border-color: var(--purple-700);
+    --button-primary-hover-color-1: var(--purple-800);
+    --button-primary-hover-color-2: var(--purple-900);
+    --button-primary-active-color: var(--purple-900);
+
+    --button-primary-text-only-color: var(--purple-500);
+    --button-primary-text-only-hover-color: var(--purple-300);
+    --button-primary-text-only-hover-bg-color-1: var(--grey-warm-800);
+    --button-primary-text-only-hover-bg-color-2: var(--grey-warm-800);
+
+    --button-secondary-text-only-color: var(--green-500);
+    --button-secondary-text-only-hover-color: var(--green-200);
+    --button-secondary-text-only-hover-bg-color-1: var(--grey-warm-800);
+    --button-secondary-text-only-hover-bg-color-2: var(--grey-warm-800);
+
+    --button-danger-text-only-color: var(--red-500);
+    --button-danger-text-only-hover-color: var(--red-200);
+    --button-danger-text-only-hover-bg-color-1: var(--grey-warm-800);
+    --button-danger-text-only-hover-bg-color-2: var(--grey-warm-800);
+  }
+}

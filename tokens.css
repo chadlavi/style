@@ -148,4 +148,61 @@
 
   /* PAGE & LAYOUT */
   --background: var(--white);
+  --theme: var(--theme-light);
+
+  /* BUTTON COLORS */
+
+  --button-color: var(--grey-500);
+  --button-bg-color-1: var(--grey-light-600);
+  --button-bg-color-2: var(--grey-light-700);
+  --button-border-color: var(--grey-light-600);
+  --button-hover-color-1: var(--grey-light-700);
+  --button-hover-color-2: var(--grey-light-800);
+  --button-active-color: var(--grey-light-900);
+  
+  --button-text-only-color: var(--button-color);
+  --button-text-only-hover-color: var(--button-color);
+  --button-text-only-hover-bg-color-1: var(--grey-light-100);
+  --button-text-only-hover-bg-color-2: var(--grey-light-200);
+
+
+  --button-primary-color: var(--white);
+  --button-primary-bg-color-1: var(--purple-600);
+  --button-primary-bg-color-2: var(--purple-700);
+  --button-primary-border-color: var(--purple-600);
+  --button-primary-hover-color-1: var(--purple-700);
+  --button-primary-hover-color-2: var(--purple-800);
+  --button-primary-active-color: var(--purple-800);
+
+  --button-primary-text-only-color: var(--purple-600);
+  --button-primary-text-only-hover-color: var(--theme-dark);
+  --button-primary-text-only-hover-bg-color-1: var(--purple-25);
+  --button-primary-text-only-hover-bg-color-2: var(--purple-50);
+
+  --button-secondary-color: var(--white);
+  --button-secondary-bg-color-1: var(--green-600);
+  --button-secondary-bg-color-2: var(--green-700);
+  --button-secondary-border-color: var(--green-600);
+  --button-secondary-hover-color-1: var(--green-700);
+  --button-secondary-hover-color-2: var(--green-800);
+  --button-secondary-active-color: var(--green-800);
+
+  --button-secondary-text-only-color: var(--secondary);
+  --button-secondary-text-only-hover-color: var(--secondary-dark);
+  --button-secondary-text-only-hover-bg-color-1: var(--green-25);
+  --button-secondary-text-only-hover-bg-color-2: var(--green-50);
+  
+  --button-danger-color: var(--white);
+  --button-danger-bg-color-1: var(--red-600);
+  --button-danger-bg-color-2: var(--red-700);
+  --button-danger-border-color: var(--red-600);
+  --button-danger-hover-color-1: var(--red-700);
+  --button-danger-hover-color-2: var(--red-800);
+  --button-danger-active-color: var(--red-900);
+
+  --button-danger-text-only-color: var(--danger);
+  --button-danger-text-only-hover-color: var(--danger-dark);
+  --button-danger-text-only-hover-bg-color-1: var(--red-25);
+  --button-danger-text-only-hover-bg-color-2: var(--red-50);
+
 }

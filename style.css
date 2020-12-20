@@ -4,6 +4,7 @@
 @import url("gradient.css");
 @import url("text.css");
 @import url("layout.css");
+@import url("dark.css");
 
 /* ELEMENTS */
 
@@ -71,13 +72,13 @@ button,
   -webkit-border-radius: var(--spacing-md);
   border: 1px solid;
   font-weight: 500;
-  color: var(--text-color);
+  color: var(--button-color);
   background: linear-gradient(
     80deg,
-    var(--grey-light-600) 25%,
-    var(--grey-light-700) 100%
+    var(--button-bg-color-1) 25%,
+    var(--button-bg-color-2) 100%
   );
-  border-color: var(--grey-light-600);
+  border-color: var(--button-border-color);
   cursor: pointer;
   margin: 0;
 }
@@ -85,82 +86,90 @@ button:not(:disabled):hover,
 .button:not(:disabled):hover {
   background: linear-gradient(
     80deg,
-    var(--grey-light-700) 25%,
-    var(--grey-light-800) 100%
+    var(--button-hover-color-1) 25%,
+    var(--button-hover-color-2) 100%
   );
 }
 button:not(:disabled):active,
 .button:not(:disabled):active {
-  background: var(--grey-light-900);
+  background: var(--button-active-color);
 }
 
 button.primary,
 .button.primary {
-  color: var(--background);
+  color: var(--button-primary-color);
   background: linear-gradient(
     80deg,
-    var(--purple-600) 25%,
-    var(--purple-700) 100%
+    var(--button-primary-bg-color-1) 25%,
+    var(--button-primary-bg-color-2) 100%
   );
-  border-color: var(--purple-600);
+  border-color: var(--button-primary-border-color);
 }
 button.primary:not(:disabled):hover,
 .button.primary:not(:disabled):hover {
   background: linear-gradient(
     80deg,
-    var(--purple-700) 25%,
-    var(--purple-800) 100%
+    var(--button-primary-hover-color-1) 25%,
+    var(--button-primary-hover-color-2) 100%
   );
 }
 button.primary:not(:disabled):active,
 .button.primary:not(:disabled):active {
-  background: var(--purple-800);
+  background: var(--button-primary-active-color);
 }
 
 button.secondary,
 .button.secondary {
-  color: var(--background);
+  color: var(--button-secondary-color);
   background: linear-gradient(
     80deg,
-    var(--green-600) 25%,
-    var(--green-700) 100%
+    var(--button-secondary-bg-color-1) 25%,
+    var(--button-secondary-bg-color-2) 100%
   );
-  border-color: var(--green-600);
+  border-color: var(--button-secondary-border-color);
 }
 button.secondary:not(:disabled):hover,
 .button.secondary:not(:disabled):hover {
   background: linear-gradient(
     80deg,
-    var(--green-700) 25%,
-    var(--green-800) 100%
+    var(--button-secondary-hover-color-1) 25%,
+    var(--button-secondary-hover-color-2) 100%
   );
 }
 button.secondary:not(:disabled):active,
 .button.secondary:not(:disabled):active {
-  background: var(--green-800);
+  background: var(--button-secondary-active-color);
 }
 .secondary:focus {
   box-shadow: 0 0 0 calc(var(--unit) / 4) var(--background),
-    0 0 0 calc(var(--unit) / 2) var(--green-600);
+    0 0 0 calc(var(--unit) / 2) var(--secondary);
 }
 
 button.danger,
 .button.danger {
-  color: var(--background);
-  background: linear-gradient(80deg, var(--red-600) 25%, var(--red-700) 100%);
-  border-color: var(--red-600);
+  color: var(--button-danger-color);
+  background: linear-gradient(
+    80deg,
+    var(--button-danger-bg-color-1) 25%,
+    var(--button-danger-bg-color-2) 100%
+  );
+  border-color: var(--button-danger-border-color);
 }
 button.danger:not(:disabled):hover,
 .button.danger:not(:disabled):hover {
-  background: linear-gradient(80deg, var(--red-700) 25%, var(--red-800) 100%);
+  background: linear-gradient(
+    80deg,
+    var(--button-danger-hover-color-1) 25%,
+    var(--button-danger-hover-color-2) 100%
+  );
 }
 button.danger:not(:disabled):active,
 .button.danger:not(:disabled):active {
-  background: var(--red-900);
+  background: var(--button-danger-active-color);
 }
 .danger:focus {
   box-shadow: 0 0 0 calc(var(--unit) / 4) var(--background),
-    0 0 0 calc(var(--unit) / 2) var(--red-700);
+    0 0 0 calc(var(--unit) / 2) var(--danger);
 }
 
 button:disabled,
@@ -175,54 +184,64 @@ button.text-only,
 .button.text-only {
   background: none;
   border-color: transparent;
+  color: var(--button-text-only-color);
 }
 button.text-only:hover,
 .button.text-only:hover,
 button.text-only:focus,
 .button.text-only:focus {
+  color: var(--button-text-only-hover-color);
   background: linear-gradient(
     80deg,
-    var(--grey-light-100) 25%,
-    var(--grey-light-200) 100%
+    var(--button-text-only-hover-bg-color-1) 25%,
+    var(--button-text-only-hover-bg-color-2) 100%
   );
 }
 button.text-only.primary,
 .button.text-only.primary {
-  color: var(--theme);
+  color: var(--button-primary-text-only-color);
 }
 button.text-only.primary:hover,
 .button.text-only.primary:hover,
 button.text-only.primary:focus,
 .button.text-only.primary:focus {
-  color: var(--theme-dark);
+  color: var(--button-primary-text-only-hover-color);
   background: linear-gradient(
     80deg,
-    var(--purple-25) 25%,
-    var(--purple-50) 100%
+    var(--button-primary-text-only-hover-bg-color-1) 25%,
+    var(--button-primary-text-only-hover-bg-color-2) 100%
   );
 }
 button.text-only.secondary,
 .button.text-only.secondary {
-  color: var(--secondary);
+  color: var(--button-secondary-text-only-color);
 }
 button.text-only.secondary:hover,
 .button.text-only.secondary:hover,
 button.text-only.secondary:focus,
 .button.text-only.secondary:focus {
-  color: var(--secondary-dark);
-  background: linear-gradient(80deg, var(--green-25) 25%, var(--green-50) 100%);
+  color: var(--button-secondary-text-only-hover-color);
+  background: linear-gradient(
+    80deg,
+    var(--button-secondary-text-only-hover-bg-color-1) 25%,
+    var(--button-secondary-text-only-hover-bg-color-2) 100%
+  );
 }
 button.text-only.danger,
 .button.text-only.danger {
-  color: var(--danger);
+  color: var(--button-danger-text-only-color);
 }
 
 button.text-only.danger:hover,
 .button.text-only.danger:hover,
 button.text-only.danger:focus,
 .button.text-only.danger:focus {
-  color: var(--danger-dark);
-  background: linear-gradient(80deg, var(--red-25) 25%, var(--red-50) 100%);
+  color: var(--button-danger-text-only-hover-color);
+  background: linear-gradient(
+    80deg,
+    var(--button-danger-text-only-hover-bg-color-1) 25%,
+    var(--button-danger-text-only-hover-bg-color-2) 100%
+  );
 }
 
 /* code-sandbox-only fix */

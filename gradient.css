@@ -3,6 +3,7 @@
 /* gradient */
 
 .gradient-purple-light {
+  color: var(--grey-500);
   background: linear-gradient(
     80deg,
     var(--purple-50) 25%,
@@ -10,9 +11,11 @@
   );
 }
 .gradient-red-light {
+  color: var(--grey-500);
   background: linear-gradient(80deg, var(--red-25) 25%, var(--red-50) 100%);
 }
 .gradient-yellow-light {
+  color: var(--grey-500);
   background: linear-gradient(
     80deg,
     var(--yellow-50) 25%,
@@ -20,16 +23,20 @@
   );
 }
 .gradient-green-light {
+  color: var(--grey-500);
   background: linear-gradient(80deg, var(--green-25) 25%, var(--green-50) 100%);
 }
 .gradient-blue-light {
+  color: var(--grey-500);
   background: linear-gradient(80deg, var(--blue-25) 25%, var(--blue-50) 100%);
 }
 .gradient-navy-light {
+  color: var(--grey-500);
   background: linear-gradient(80deg, var(--navy-25) 25%, var(--navy-50) 100%);
 }
 
 .gradient-purple {
+  color: var(--grey-500);
   background: linear-gradient(
     80deg,
     var(--purple-300) 25%,
@@ -37,9 +44,11 @@
   );
 }
 .gradient-red {
+  color: var(--grey-500);
   background: linear-gradient(80deg, var(--red-300) 25%, var(--red-500) 100%);
 }
 .gradient-yellow {
+  color: var(--grey-500);
   background: linear-gradient(
     80deg,
     var(--yellow-300) 25%,
@@ -47,6 +56,7 @@
   );
 }
 .gradient-green {
+  color: var(--grey-500);
   background: linear-gradient(
     80deg,
     var(--green-300) 25%,
@@ -54,9 +64,11 @@
   );
 }
 .gradient-blue {
+  color: var(--grey-500);
   background: linear-gradient(80deg, var(--blue-300) 25%, var(--blue-500) 100%);
 }
 .gradient-navy {
+  color: var(--grey-500);
   background: linear-gradient(80deg, var(--navy-200) 25%, var(--navy-300) 100%);
 }
 
@@ -73,6 +85,7 @@
   color: var(--white);
 }
 .gradient-yellow-dark {
+  color: var(--grey-500);
   background: linear-gradient(
     80deg,
     var(--yellow-700) 25%,
