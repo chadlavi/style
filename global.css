@@ -1,0 +1,11 @@
+@import url("tokens.css");
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 calc(var(--unit) / 4) var(--background),
+    0 0 0 calc(var(--unit) / 2) var(--theme);
+}

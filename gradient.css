@@ -1,0 +1,97 @@
+@import url("tokens.css");
+
+/* gradient */
+
+.gradient-purple-light {
+  background: linear-gradient(
+    80deg,
+    var(--purple-50) 25%,
+    var(--purple-100) 100%
+  );
+}
+.gradient-red-light {
+  background: linear-gradient(80deg, var(--red-25) 25%, var(--red-50) 100%);
+}
+.gradient-yellow-light {
+  background: linear-gradient(
+    80deg,
+    var(--yellow-50) 25%,
+    var(--yellow-100) 100%
+  );
+}
+.gradient-green-light {
+  background: linear-gradient(80deg, var(--green-25) 25%, var(--green-50) 100%);
+}
+.gradient-blue-light {
+  background: linear-gradient(80deg, var(--blue-25) 25%, var(--blue-50) 100%);
+}
+.gradient-navy-light {
+  background: linear-gradient(80deg, var(--navy-25) 25%, var(--navy-50) 100%);
+}
+
+.gradient-purple {
+  background: linear-gradient(
+    80deg,
+    var(--purple-300) 25%,
+    var(--purple-500) 100%
+  );
+}
+.gradient-red {
+  background: linear-gradient(80deg, var(--red-300) 25%, var(--red-500) 100%);
+}
+.gradient-yellow {
+  background: linear-gradient(
+    80deg,
+    var(--yellow-300) 25%,
+    var(--yellow-500) 100%
+  );
+}
+.gradient-green {
+  background: linear-gradient(
+    80deg,
+    var(--green-300) 25%,
+    var(--green-500) 100%
+  );
+}
+.gradient-blue {
+  background: linear-gradient(80deg, var(--blue-300) 25%, var(--blue-500) 100%);
+}
+.gradient-navy {
+  background: linear-gradient(80deg, var(--navy-200) 25%, var(--navy-300) 100%);
+}
+
+.gradient-purple-dark {
+  background: linear-gradient(
+    80deg,
+    var(--purple-800) 25%,
+    var(--purple-900) 100%
+  );
+  color: var(--white);
+}
+.gradient-red-dark {
+  background: linear-gradient(80deg, var(--red-700) 25%, var(--red-900) 100%);
+  color: var(--white);
+}
+.gradient-yellow-dark {
+  background: linear-gradient(
+    80deg,
+    var(--yellow-700) 25%,
+    var(--yellow-900) 100%
+  );
+}
+.gradient-green-dark {
+  background: linear-gradient(
+    80deg,
+    var(--green-700) 25%,
+    var(--green-900) 100%
+  );
+  color: var(--white);
+}
+.gradient-blue-dark {
+  background: linear-gradient(80deg, var(--blue-700) 25%, var(--blue-900) 100%);
+  color: var(--white);
+}
+.gradient-navy-dark {
+  background: linear-gradient(80deg, var(--navy-700) 25%, var(--navy-900) 100%);
+  color: var(--white);
+}
