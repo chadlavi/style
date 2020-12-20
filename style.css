@@ -49,6 +49,11 @@ a.anchor:focus:after {
   object-fit: cover;
 }
 
+button.avatar:active {
+  border-color: var(--background);
+  opacity: 0.85;
+}
+
 .avatar.small {
   --avatar-size: calc(var(--unit) * 4);
 }
