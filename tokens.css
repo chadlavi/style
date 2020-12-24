@@ -205,4 +205,8 @@
   --button-danger-text-only-hover-bg-color-1: var(--red-25);
   --button-danger-text-only-hover-bg-color-2: var(--red-50);
 
+  /* MENU COLORS */
+
+  --menu-background: var(--grey-light-100);
+  --menu-color: var(--text-color);
 }

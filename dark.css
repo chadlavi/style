@@ -49,5 +49,9 @@
     --button-danger-text-only-hover-color: var(--red-200);
     --button-danger-text-only-hover-bg-color-1: var(--grey-warm-800);
     --button-danger-text-only-hover-bg-color-2: var(--grey-warm-800);
+
+    /* MENU COLORS */
+
+    --menu-background: var(--grey-warm-800);
   }
 }

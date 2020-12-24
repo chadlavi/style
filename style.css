@@ -277,7 +277,8 @@ button.text-only.danger:focus,
 .menu ul {
   position: absolute;
   margin-top: 0;
-  background: var(--grey-light-100);
+  background: var(--menu-background);
+  color: var(--menu-color);
   padding: var(--spacing-sm) 0;
   border-radius: var(--spacing-md);
   box-shadow: 0 0 var(--spacing-sm) var(--spacing-xs) rgba(0, 0, 0, 0.075);
