@@ -290,7 +290,7 @@ button.reset {
 
 .menu ul {
   position: absolute;
-  margin-top: var(--spacing-xs);
+  margin: 0;
   background: var(--menu-background);
   color: var(--menu-color);
   padding: 0;
