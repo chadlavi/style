@@ -260,7 +260,8 @@
       <p>Adding the class <code>open</code> to a menu opens it.</p>
       <p>
         For a no-js option, you can add the class <code>open-on-hover</code> to
-        make a menu open on hover or focus-within.
+        make a menu open on hover or focus-within. Though note that this means
+        users will have to tab through every item in the menu.
       </p>
     </div>
     <div class="margin-top-md margin-bottom-md">
@@ -289,11 +290,11 @@
       </script>
       <div class="margin-top-md margin-bottom-md">
         <nav class="menu open-on-hover">
-          <button>This menu opens on hover or focus. No js required.</button>
+          <button>This menu opens on hover or focus. No js needed.</button>
           <ul>
             <li><a class="inherit no-underline" href="#menu">Menu item 1</a></li>
-            <li>Menu item 2</li>
-            <li>Menu item 3</li>
+            <li><button class="reset">Menu item 2</button></li>
+            <li><button class="reset">Menu item 3</button></li>
           </ul>
         </nav>
       </div>
@@ -302,16 +303,16 @@
           <button class="menu-toggle" onclick="toggleMenu('exampleMenu1')">open menu</button>
           <ul>
             <li><a class="inherit no-underline" href="#menu">Menu item 1</a></li>
-            <li>Menu item 2</li>
-            <li>Menu item 3</li>
+            <li><button class="reset">Menu item 2</button></li>
+            <li><button class="reset">Menu item 3</button></li>
           </ul>
         </nav>
         <nav id="exampleMenu2" class="menu open">
           <button class="menu-toggle" onclick="toggleMenu('exampleMenu2')">close menu</button>
           <ul>
-            <li>Menu item 1</li>
-            <li>Menu item 2</li>
-            <li>Menu item 3</li>
+            <li><a class="inherit no-underline" href="#menu">Menu item 1</a></li>
+            <li><button class="reset">Menu item 2</button></li>
+            <li><button class="reset">Menu item 3</button></li>
           </ul>
         </nav>
       </div>

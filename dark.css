@@ -53,5 +53,7 @@
     /* MENU COLORS */
 
     --menu-background: var(--grey-warm-800);
+    --menu-hover-background: var(--grey-warm-600);
+
   }
 }
