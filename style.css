@@ -69,7 +69,7 @@ button.avatar:active {
 
 button,
 .button {
-  -webkit-appearance: button;
+  -webkit-appearance: none;
   touch-action: manipulation;
   user-select: none;
   -webkit-touch-callout: none;
@@ -251,6 +251,39 @@ button.text-only.danger:focus,
     var(--button-danger-text-only-hover-bg-color-1) 25%,
     var(--button-danger-text-only-hover-bg-color-2) 100%
   );
+}
+
+.menu {
+  display: inline-block;
+}
+
+.menu .menu-close {
+  display: none;
+}
+
+.menu ul {
+  position: absolute;
+  margin-top: 0;
+  background: var(--grey-light-100);
+  padding: var(--spacing-sm) 0;
+  border-radius: var(--spacing-md);
+
+}
+.menu li {
+  display: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  list-style: none;
+}
+
+.menu.open .menu-close {
+  display: inline-block;
+}
+.menu.open .menu-open {
+  display: none;
+}
+
+.menu.open li {
+  display: block;
 }
 
 /* code-sandbox-only fix */
