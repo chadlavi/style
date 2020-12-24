@@ -31,6 +31,14 @@ a.anchor:focus:after {
   content: "\00a0\1F517";
 }
 
+a.inherit, a.inherit:hover {
+  color: inherit;
+}
+
+a.no-underline {
+  text-decoration: none;
+}
+
 /* Avatars */
 
 .avatar {
@@ -69,13 +77,23 @@ button.avatar:active {
 
 button,
 .button {
+  /* reset */
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
   -webkit-appearance: none;
   touch-action: manipulation;
   user-select: none;
   -webkit-touch-callout: none;
+
+  /* styles */
   font-family: var(--font);
-  padding: 0 var(--spacing-lg);
-  height: calc(var(--unit) * 5.5);
+  padding: var(--spacing-xs) var(--spacing-lg);
+  line-height: 1;
+  min-height: calc(var(--unit) * 5.5);
   font-size: var(--font-size);
   border-radius: var(--spacing-md);
   -webkit-border-radius: var(--spacing-md);
@@ -88,7 +106,6 @@ button,
     var(--button-bg-color-2) 100%
   );
   border-color: var(--button-border-color);
-  cursor: pointer;
   margin: 0;
 }
 button:not(:disabled):hover,
@@ -257,16 +274,13 @@ button.text-only.danger:focus,
   display: inline-block;
 }
 
-.menu .menu-close {
-  display: none;
-}
-
 .menu ul {
   position: absolute;
   margin-top: 0;
   background: var(--grey-light-100);
   padding: var(--spacing-sm) 0;
   border-radius: var(--spacing-md);
+  box-shadow: 0 0 var(--spacing-sm) var(--spacing-xs) rgba(0, 0, 0, 0.075);
 
 }
 .menu li {
@@ -275,14 +289,7 @@ button.text-only.danger:focus,
   list-style: none;
 }
 
-.menu.open .menu-close {
-  display: inline-block;
-}
-.menu.open .menu-open {
-  display: none;
-}
-
-.menu.open li {
+.menu.open li, .menu.open-on-hover:hover li, .menu.open-on-hover:focus-within li {
   display: block;
 }
 

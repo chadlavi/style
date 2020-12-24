@@ -253,24 +253,68 @@
     </div>
     <h2 id="menu" class="margin-top-xl margin-bottom-md"><a class="anchor" href="#menu">menu</a></h2>
     <div class="margin-top-md margin-bottom-md">
-      <nav id="exampleMenu1" class="menu">
-        <button class="menu-open">I'm a closed menu</button>
-        <button class="menu-close">You can't see this</button>
-        <ul>
-          <li>Menu item 1</li>
-          <li>Menu item 2</li>
-          <li>Menu item 3</li>
-        </ul>
-      </nav>
-      <nav id="exampleMenu2" class="menu open">
-        <button class="menu-open">You can't see this</button>
-        <button class="menu-close">I'm an open menu</button>
-        <ul>
-          <li>Menu item 1</li>
-          <li>Menu item 2</li>
-          <li>Menu item 3</li>
-        </ul>
-      </nav>
+      <p>
+        Menu should be an element with the class <code>menu</code>. It should
+        contain an unordered list.
+      </p>
+      <p>Adding the class <code>open</code> to a menu opens it.</p>
+      <p>
+        For a no-js option, you can add the class <code>open-on-hover</code> to
+        make a menu open on hover or focus-within.
+      </p>
+    </div>
+    <div class="margin-top-md margin-bottom-md">
+      <script type="text/javascript">
+        /**
+         * a quick and dirty means of doing this. This is obviously a lot easier
+         * to do in a React app, or with any real framework
+         */
+        const toggleMenu = (id) => {
+          const menu = document.getElementById(id)
+          const toggleButton = menu.getElementsByClassName("menu-toggle")[0]
+          if (menu) {
+            if (menu.className.match(/open/ig)) {
+              menu.className = "menu"
+              if (toggleButton) {
+                toggleButton.innerHTML = "open menu"
+              }
+            } else {
+              menu.className = "menu open"
+              if (toggleButton) {
+                toggleButton.innerHTML = "close menu"
+              }
+            }
+          }
+        }
+      </script>
+      <div class="margin-top-md margin-bottom-md">
+        <nav class="menu open-on-hover">
+          <button>This menu opens on hover or focus. No js required.</button>
+          <ul>
+            <li><a class="inherit no-underline" href="#menu">Menu item 1</a></li>
+            <li>Menu item 2</li>
+            <li>Menu item 3</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="margin-top-md margin-bottom-md">
+        <nav id="exampleMenu1" class="menu">
+          <button class="menu-toggle" onclick="toggleMenu('exampleMenu1')">open menu</button>
+          <ul>
+            <li><a class="inherit no-underline" href="#menu">Menu item 1</a></li>
+            <li>Menu item 2</li>
+            <li>Menu item 3</li>
+          </ul>
+        </nav>
+        <nav id="exampleMenu2" class="menu open">
+          <button class="menu-toggle" onclick="toggleMenu('exampleMenu2')">close menu</button>
+          <ul>
+            <li>Menu item 1</li>
+            <li>Menu item 2</li>
+            <li>Menu item 3</li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <div>
       I'm some other content that's beneath them, I'll be overlapped by the open
