@@ -59,6 +59,7 @@ a.no-underline {
 
 button.avatar {
   border-color: var(--theme);
+  min-height: unset;
 }
 button.avatar:active {
   border-color: var(--background);
